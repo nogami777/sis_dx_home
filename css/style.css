@@ -405,7 +405,7 @@ p a {
 	margin: 0 auto;
 	padding: 40px;
 }
-.omikuji-modal{
+.modal{
 	display: none;
 	height: 100vh;
 	position: fixed;
