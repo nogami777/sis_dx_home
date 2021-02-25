@@ -37,9 +37,7 @@ $(function() {
 		$("html, body").animate({scrollTop:position}, speed, "swing");
 	return false;
 	});
-});
 
-$(function(){
 	$('.js-modal-open').on('click',function(){
 		$('.js-modal').fadeIn();
 		return false;
