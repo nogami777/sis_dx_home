@@ -937,11 +937,7 @@ input[name="slideshow"] {
 	background-color:transparent;
 }
 
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+
 .omikuji-content{
 	margin: 0 auto;
 	padding: 40px;
