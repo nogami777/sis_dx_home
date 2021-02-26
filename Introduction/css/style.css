@@ -941,7 +941,7 @@ input[name="slideshow"] {
 .omikuji-content{
 	margin: 0 auto;
 	padding: 40px;
-	color:green;
+	color:white;
 }
 .modal{
 	display: none;
@@ -964,5 +964,5 @@ input[name="slideshow"] {
 	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 60%;
-	color:green;
+	color:cyan;
 }
