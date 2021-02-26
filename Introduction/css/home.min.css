@@ -96,7 +96,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	height: 120%;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 50%;
 }
 .omikuji-modal-bg{
 	background: rgba(0,0,0,0.8);
@@ -112,9 +112,6 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 60%;
-	max-width: 900px; //画面を可変した際に自動でリサイズされるように
-	display: inline-block; //blockでもinlineでもなくinline-blockが重要
-	vertical-align: middle; //縦方向中央寄せにするのに必要
-	color:green;
+	color:white;
 	font-weight: bold;
 }
