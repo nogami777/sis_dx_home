@@ -106,10 +106,10 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 }
 .omikuji-modal-content{
 	background: #fff;
-	left: 50%;
+	left: 25%;
 	padding: 40px;
 	position: absolute;
-	top: 50%;
+	top: 25%;
 	transform: translate(-50%,-50%);
 	width: 60%;
 	color:green;
