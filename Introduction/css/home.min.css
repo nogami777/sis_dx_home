@@ -93,7 +93,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 }
 .modal{
 	display: none;
-	height: 100vh;
+	height: 120%;
 	position: fixed;
 	top: 0;
 	width: 100%;
