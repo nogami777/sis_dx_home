@@ -95,6 +95,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 .omikuji-content{
 	margin: 0 auto;
 	padding: 40px;
+	color:red;
 }
 .modal{
     display: none;
@@ -113,7 +114,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
     /* お好みで */
     width: 90%;
     max-height: 80%;
-    max-width: 600px;
+    max-width: 600px
 }
 .omikuji-modal-bg{
 	background: rgba(0,0,0,0.8);
