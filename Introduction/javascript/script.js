@@ -87,11 +87,11 @@ $(function() {
 });
 
 $(function() {
-	$('.js-modal-open').on('click',function(){
+	$('.omikuji_modal-body1').on('click',function(){
 		$('.omikuji_modal1').fadeIn();
 		return false;
 	});
-	$('.js-modal-close').on('click',function(){
+	$('.omikuji_modal-close').on('click',function(){
 		$('.omikuji_modal1').fadeOut();
 		return false;
 	});
