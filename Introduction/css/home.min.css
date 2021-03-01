@@ -99,13 +99,13 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	height: 100vh;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 }
 .omikuji-modal-bg{
 	background: rgba(0,0,0,0.8);
 	height: 100vh;
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 }
 .omikuji-modal-content{
 	background: #fff;
@@ -115,7 +115,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 60%;
-	color:red;
+	color:blue;
 }
 
 
