@@ -209,6 +209,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 /* コンテンツ表示 */
 .omikuji_modal_content{
     padding: 5px 10px;
+	color:blue;
 }
 
 /* 背景を暗くする */
