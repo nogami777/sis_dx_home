@@ -228,7 +228,3 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
     cursor: pointer;
 }
 
-/* チェック時オーバーレイとコンテンツを表示 */
-#omikuji_modal1:checked ~ .omikuji_modal_body1, #omikuji_modal1:checked ~ .omikuji_modal_overlay{
-    display: block;
-}
