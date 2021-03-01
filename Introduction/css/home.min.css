@@ -93,6 +93,14 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 }
 .omikuji-content{
 	box-sizing: border-box;
+	    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+	color: red;
 }
 .modal{
 	display: none;
