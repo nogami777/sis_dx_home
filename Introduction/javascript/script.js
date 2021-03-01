@@ -85,14 +85,3 @@ $(function() {
 		return false;
 	});
 });
-
-$(function() {
-	$('.omikuji_modal-btn').on('click',function(){
-		$('.omikuji_modal_body1').fadeIn();
-		return false;
-	});
-	$('.omikuji_modal-close').on('click',function(){
-		$('.omikuji_modal_body1').fadeOut();
-		return false;
-	});
-});
