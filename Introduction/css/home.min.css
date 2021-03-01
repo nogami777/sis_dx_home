@@ -92,8 +92,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	padding: 0;
 }
 .omikuji-content{
-	margin: 0 auto;
-	padding: 40px;
+	box-sizing: border-box;
 }
 .modal{
 	display: none;
@@ -101,7 +100,6 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	position: fixed;
 	top: 0;
 	width: 100%;
-	box-sizing: border-box;
 }
 .omikuji-modal-bg{
 	background: rgba(0,0,0,0.8);
