@@ -78,7 +78,9 @@ $(function() {
 $(function() {
 	$('.js-modal-open').on('click',function(){
 		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
-		omikuji();
+		$('.js-modal').load(function() {
+			omikuji();
+		});
 		$('.js-modal').fadeIn();
 		return false;
 	});
