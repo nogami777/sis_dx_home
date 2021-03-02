@@ -79,6 +79,15 @@ $(function() {
 	$('.js-modal-open').on('click',function(){
 		$('.js-modal').fadeIn();
 		var position = $(this).offset().top - 50; //ヘッダの高さ分位置をずらす
+		var img = new Array (
+			'images/omikuji_daikichi.png',
+			'images/omikuji_chuukichi.png',
+			'images/omikuji_syoukichi.png',
+			'images/omikuji_kyou.png',
+		);
+		var random = Math.floor(Math.random() * img.length);
+		var result = '<img src =' +img[random]+ '>';
+		document.getElementById('result').innerHTML = result;
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
