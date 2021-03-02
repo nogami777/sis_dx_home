@@ -77,7 +77,7 @@ $(function() {
 
 $(function() {
 	$('.js-modal-open').on('click',function(){
-		var modalobj = $('.js-modal');
+		var modalobj = $('.page');
 		var position = modalobj.offset().top; //ヘッダの高さ分位置をずらす
 		$('.js-modal').fadeIn();
 		return false;
