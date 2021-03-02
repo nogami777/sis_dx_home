@@ -77,8 +77,8 @@ $(function() {
 
 $(function() {
 	$('.js-modal-open').on('click',function(){
-		var position = $(this).offset().top - 50; //ヘッダの高さ分位置をずらす
 		$('.js-modal').fadeIn();
+		var position = $(this).offset().top - 50; //ヘッダの高さ分位置をずらす
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
