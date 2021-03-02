@@ -86,7 +86,7 @@ $(function() {
 			'images/omikuji_kyou.png',
 		);
 		var random = Math.floor(Math.random() * img.length);
-		$('.omikuji-modal-content').append('<img src =' +img[random]+ '>');
+		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');
 		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
 		$('.js-modal').fadeIn();
 		return false;
