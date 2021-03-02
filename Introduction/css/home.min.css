@@ -105,7 +105,6 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	display: none;
 	height: 100vh;
 	position: fixed;
-	top: 0;
 	width: 100vw;
 	position: absolute;
 }
@@ -118,14 +117,14 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 .omikuji-modal-content{
 	background: #fff;
 	left: 50%;
-	padding: 80px;
+	padding: 5px;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 60%;
 	text-align: center;
-	color:yallow;
-	border-radius: 10px;
+	color:red;
+	border-radius: 20px;
 }
 
 
