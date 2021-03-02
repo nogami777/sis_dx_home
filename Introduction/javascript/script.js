@@ -85,8 +85,8 @@ $(function() {
 			'images/omikuji_syoukichi.png',
 			'images/omikuji_kyou.png',
 		);
-//		var random = Math.floor(Math.random() * img.length);
-//		var result = '<img src =' +img[random]+ '>';
+		var random = Math.floor(Math.random() * img.length);
+		var result = '<img src =' +img[random]+ '>';
 //		document.getElementById('result').innerHTML = result;
 		$('.js-modal').fadeIn();
 		return false;
