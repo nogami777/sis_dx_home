@@ -87,7 +87,7 @@ $(function() {
 			);
 			var random = Math.floor(Math.random() * img.length);
 			var result = '<img src =' +img[random]+ '>';
-			document.getElementById('result').innerHTML = result;
+//			document.getElementById('result').innerHTML = result;
 		$('.js-modal').fadeIn();
 		return false;
 	});
