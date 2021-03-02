@@ -117,13 +117,14 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 .omikuji-modal-content{
 	background: #fff;
 	left: 50%;
-	padding: 40px;
+	padding: 80px;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 60%;
 	text-align: center;
-	color:blue;
+	color:yallow;
+	border-radius: 10px;
 }
 
 
