@@ -87,6 +87,7 @@ $(function() {
 			);
 			var random = Math.floor(Math.random() * img.length);
 			var result = '<img src =' +img[random]+ '>';
+		$('.omikuji-modal-content').append('result');
 
 //			document.getElementById('result').innerHTML = result;
 		$('.js-modal').fadeIn();
