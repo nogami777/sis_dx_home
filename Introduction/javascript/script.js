@@ -79,19 +79,15 @@ $(function() {
 $(function() {
 	$('.js-modal-open').on('click',function(){
 		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
-			var img = new Array (
+		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
 			'images/omikuji_syoukichi.png',
 			'images/omikuji_kyou.png',
-			);
-			var random = Math.floor(Math.random() * img.length);
-			var result = '<img src =' +img[random]+ '>';
-		$('.omikuji-modal-content').append('<img src =' +img[random]+ '>');
-
-//			document.getElementById('result').innerHTML = result;
+		);
+		var random = Math.floor(Math.random() * img.length);
+		$('.omikuji-modal-content').append('<img src =' +img[random]+ '><a class="js-modal-close" href="">閉じる</a>');
 		$('.js-modal').fadeIn();
-				$('.js-modal').append('result');
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
