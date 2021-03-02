@@ -78,8 +78,16 @@ $(function() {
 $(function() {
 	$('.js-modal-open').on('click',function(){
 		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
-		$('.js-modal').load(function() {
-			omikuji();
+		function() {
+			var img = new Array (
+			'images/omikuji_daikichi.png',
+			'images/omikuji_chuukichi.png',
+			'images/omikuji_syoukichi.png',
+			'images/omikuji_kyou.png',
+			);
+			var random = Math.floor(Math.random() * img.length);
+			var result = '<img src =' +img[random]+ '>';
+//			document.getElementById('result').innerHTML = result;
 		});
 		$('.js-modal').fadeIn();
 		return false;
