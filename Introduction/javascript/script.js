@@ -92,6 +92,7 @@ $(function() {
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
+		$('.omikuji-modal-content').remove();
 		$('.js-modal').fadeOut();
 		return false;
 	});
