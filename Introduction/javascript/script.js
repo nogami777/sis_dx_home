@@ -92,7 +92,7 @@ $(function() {
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
-		$('.omikuji-modal-content').remove();
+		$('.omikuji-modal-content').empty();
 		$('.js-modal').fadeOut();
 		return false;
 	});
