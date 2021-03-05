@@ -102,6 +102,7 @@ $(function() {
 	$('.js-modal-close').on('click',function(){
 		$('.js-modal').fadeOut();
 		$('.omikuji-modal-content').empty();
+		$('.js-modal').parents().css('transform','');
 		return false;
 	});
 });
