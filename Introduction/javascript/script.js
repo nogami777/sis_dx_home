@@ -96,10 +96,11 @@ $(function() {
 //		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
 //		$('.header_contact_inner').css('transform','none');
 //		$('#page').css('transform','none');
-		var h1 = $('#header').height();
+//		var h1 = $('#header').height();
+		var h1;
 		var h2 = $('.CoffeeBrake_Top').height();
 		var h3 = h1 + h2
-		$('.omikuji-modal-content').append('<p>' +h1 +h2 +h3+ </p>');
+		$('.omikuji-modal-content').append('<p>' +h1 h2 h3+ </p>');
 		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
 		$('.js-modal').fadeIn();
 		return false;
