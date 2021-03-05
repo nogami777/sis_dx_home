@@ -101,12 +101,16 @@ $(function() {
 		var h3 = h1 + h2
 //		$('.omikuji-modal-content').append('<p>' +h1 +h2 +h3+ '</p>');
 		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
+		var scrollPosition = $(window).scrollTop();
+		$('body').addClass('fixed').css({'top': -scrollPosition});
 		$('.js-modal').fadeIn();
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
 		$('.js-modal').fadeOut();
 		$('.omikuji-modal-content').empty();
+		$('body').removeClass('fixed').css({'top': 0});
+		window.scrollTo( 0 , scrollPosition );
 //		$('.js-modal').parents().css('transform','');
 		return false;
 	});
