@@ -103,7 +103,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	width: 100vw;
 	left: 0;
 	top: 0;
-	z-index: 999;
+/* 	z-index: 999; */
 }
 .omikuji-modal-bg{
 	background: rgba(0,0,0,0.8);
@@ -112,7 +112,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	height: 100vh;
 	left: 0;
 	top: 0;
-	z-index: 999999;
+	z-index: 3;
 }
 .omikuji-modal-content{
 	background: #fff;
@@ -125,7 +125,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	text-align: center;
 	color:blue;
 	border-radius: 20px;
-	z-index: 999;
+	z-index: 4;
 }
 
 
