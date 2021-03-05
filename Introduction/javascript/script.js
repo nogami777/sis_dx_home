@@ -94,9 +94,9 @@ $(function() {
 //		$elm.css({transform: none});
 //		$('.tabContents,.header_inner').css('transform','none');
 //		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
-		$('.header_contact_inner').css('transform','none');
+//		$('.header_contact_inner').css('transform','none');
 //		$('#page').css('transform','none');
-		var h1 = $('#header_inner').height();
+		var h1 = $('#header').height();
 		var h2 = $('.CoffeeBrake_Top').height();
 		var h3 = h1 + h2
 		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
