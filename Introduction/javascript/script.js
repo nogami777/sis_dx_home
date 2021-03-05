@@ -91,7 +91,7 @@ $(function() {
 		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
 //		$elm.css({transform: none !important});
 //		$elm.css({transform: none});
-		$('.tabContents').css('transform','none');
+		$('.tabContents,.header_inner').css('transform','none');
 //		$('.CoffeeBrake_Top').css('transform','none');
 //		$('.tabBtn').css('transform','none');
 //		$('#page').css('transform','none');
