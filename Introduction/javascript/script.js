@@ -78,7 +78,8 @@ $(function() {
 //omikuji_modal
 $(function() {
 	$('.js-modal-open').on('click',function(){
-		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
+//		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
+		$('.js-modal').parents().css('transform','none');
 		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
@@ -95,7 +96,6 @@ $(function() {
 //		$('.CoffeeBrake_Top').css('transform','none');
 //		$('.tabBtn').css('transform','none');
 //		$('#page').css('transform','none');
-		$('.js-modal').parents().css('transform','none');
 		$('.js-modal').fadeIn();
 		return false;
 	});
