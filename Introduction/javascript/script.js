@@ -98,8 +98,9 @@ $(function() {
 //		$('#page').css('transform','none');
 		var h1 = $('#header_inner').height();
 		var h2 = $('.CoffeeBrake_Top').height();
+		$('.omikuji-modal-content').append('<p>'h1 h2'</p>');
 //		$('.js-modal').css("margin-top", height + 10);
-		$('.js-modal').css("margin-top", height - h1);
+//		$('.js-modal').css("margin-top", height - h1);
 		$('.js-modal').fadeIn();
 		return false;
 	});
