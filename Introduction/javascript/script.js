@@ -99,7 +99,7 @@ $(function() {
 		var h1 = $('#header_inner').height();
 		var h2 = $('.CoffeeBrake_Top').height();
 //		$('.js-modal').css("margin-top", height + 10);
-		$('.js-modal').css('margin-top', height -h1 -h2);
+		$('.js-modal').css("margin-top", height - h1);
 		$('.js-modal').fadeIn();
 		return false;
 	});
