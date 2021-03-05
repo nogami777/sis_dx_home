@@ -94,7 +94,7 @@ $(function() {
 //		$elm.css({transform: none});
 //		$('.tabContents,.header_inner').css('transform','none');
 //		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
-//		$('.tabBtn').css('transform','none');
+		$('.header_contact_inner').css('transform','none');
 //		$('#page').css('transform','none');
 		var h1 = $('#header_inner').height();
 		var h2 = $('.CoffeeBrake_Top').height();
