@@ -89,7 +89,7 @@ $(function() {
 		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');
 		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');
 		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
-		transform: none !important;
+		$elm.css({transform: none !important});
 		$('.js-modal').fadeIn();
 		return false;
 	});
