@@ -95,7 +95,7 @@ $(function() {
 //		$('.CoffeeBrake_Top').css('transform','none');
 //		$('.tabBtn').css('transform','none');
 //		$('#page').css('transform','none');
-		$('.js-modal').parents().css({transform: none});
+		$('.js-modal').parents().css('transform','none');
 		$('.js-modal').fadeIn();
 		return false;
 	});
