@@ -90,7 +90,8 @@ $(function() {
 		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');
 		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
 //		$elm.css({transform: none !important});
-		$elm.css({transform: none});
+//		$elm.css({transform: none});
+		$('.body').css('transform','none');
 		$('.js-modal').fadeIn();
 		return false;
 	});
