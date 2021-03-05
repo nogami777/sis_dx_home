@@ -93,16 +93,20 @@ $(function() {
 //		$elm.css({transform: none !important});
 //		$elm.css({transform: none});
 //		$('.tabContents,.header_inner').css('transform','none');
-		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
+//		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
 //		$('.tabBtn').css('transform','none');
 //		$('#page').css('transform','none');
+		var h1 = $('#header_inner').height();
+		var h2 = $('.CoffeeBrake_Top').height();
+//		$('.js-modal').css("margin-top", height + 10);
+		$('.js-modal').css('top', height -h1 -h2);
 		$('.js-modal').fadeIn();
 		return false;
 	});
 	$('.js-modal-close').on('click',function(){
 		$('.js-modal').fadeOut();
 		$('.omikuji-modal-content').empty();
-		$('.js-modal').parents().css('transform','');
+//		$('.js-modal').parents().css('transform','');
 		return false;
 	});
 });
