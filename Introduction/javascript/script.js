@@ -93,7 +93,7 @@ $(function() {
 //		$elm.css({transform: none !important});
 //		$elm.css({transform: none});
 //		$('.tabContents,.header_inner').css('transform','none');
-//		$('.CoffeeBrake_Top').css('transform','none');
+		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
 //		$('.tabBtn').css('transform','none');
 //		$('#page').css('transform','none');
 		$('.js-modal').fadeIn();
