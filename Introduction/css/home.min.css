@@ -117,7 +117,7 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	left: 50%;
 	padding: 5px;
 	position: absolute;
-	top: 25%;
+	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 30%;
 	text-align: center;
