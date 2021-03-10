@@ -78,9 +78,9 @@ $(function() {
 
 //omikuji_modal
 $.when(
-    $('.js-modal-open2').on('click',function() {
-			   $('#omikuji_box').addClass('js-omikuji_box');
-    });
+//    $('.js-modal-open2').on('click',function() {
+//			   $('#omikuji_box').addClass('js-omikuji_box');
+//    });
 	wait(2);
 //).done($(function() {
 ).done(
