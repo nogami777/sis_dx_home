@@ -107,9 +107,9 @@ $(function() {
 		return false;
 	});
 //	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　transitionend', function() {
-	$('#omikuji_box').on('transitionend', function() {
+	$('#omikuji_box').on('animationend', function() {
 		$('#omikuji-content').text("終了");
-//		$('#omikuji_box').removeClass('js-omikuji_box');
+		$('#omikuji_box').removeClass('js-omikuji_box');
 //		return false;
 	});
 });
