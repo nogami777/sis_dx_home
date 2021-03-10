@@ -119,7 +119,7 @@ $(function()
 		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
 		var scrollPosition = $(window).scrollTop();
 		$('body').addClass('fixed').css({'top': -scrollPosition});$('#omikuji_box').addClass('js-omikuji_box');
-	$('#omikuji_box').addClass('js-omikuji_box');
+//	$('#omikuji_box').addClass('js-omikuji_box');
 		$('.js-modal').fadeIn();
 		return false;
 	});
