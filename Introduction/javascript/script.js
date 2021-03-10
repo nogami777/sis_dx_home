@@ -113,30 +113,6 @@ $(function() {
 	});
 });
 
-//$(function() {
-//	$('.js-modal-open').on('click',function(){
-//		$('#omikuji_box').addClass('js-omikuji_box');
-//		return false;
-//	});
-//	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　animationend', function() {
-//	$('#omikuji_box').on('animationend', function() {
-//		$('#omikuji_box').removeClass('js-omikuji_box');
-//		return false;
-//	});
-//});
-
-//$(function() {
-//	$.when(
-//		$('.js-modal-open2').on('click',function() {
-//			   $('#omikuji_box').addClass('js-omikuji_box');
-//			$('.js-modal').fadeIn();
-//			return false;
-//		});
-//).done($(function() {
-//	).done(
-//		$('#omikuji_box').addClass('js-omikuji_box');
-//	);
-//});
 
 $(function() {
 	$('.js-modal-open999').on('click',function(){
