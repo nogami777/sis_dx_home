@@ -80,9 +80,9 @@ $(function() {
 $(function() {
 	$.when(
 		$('.js-modal-open2').on('click',function() {
-//			   $('#omikuji_box').addClass('js-omikuji_box');
+			   $('#omikuji_box').addClass('js-omikuji_box');
 //    });
-	wait(2);
+//	wait(2);
 	});
 //).done($(function() {
 	).done(
