@@ -109,8 +109,8 @@ $(function() {
 //	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　transitionend', function() {
 	$('#omikuji_box').on('transitionend', function() {
 		$('#omikuji-content').text("終了");
-		$('#omikuji_box').removeClass('js-omikuji_box');
-		return false;
+//		$('#omikuji_box').removeClass('js-omikuji_box');
+//		return false;
 	});
 });
 
