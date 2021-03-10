@@ -96,6 +96,10 @@ $(function() {
 //		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
 //		$('.js-modal').parents().css('transform','none');
 //		$('#omikuji_box').addClass('js-omikuji_box');
+		$('#omikuji_box').addClass('js-omikuji_box');
+		$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　transitionend', function() {
+
+
 		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
@@ -118,10 +122,11 @@ $(function() {
 //		$('.omikuji-modal-content').append('<p>' +h1 +h2 +h3+ '</p>');
 		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
 		var scrollPosition = $(window).scrollTop();
-		$('body').addClass('fixed').css({'top': -scrollPosition});$('#omikuji_box').addClass('js-omikuji_box');
+		$('body').addClass('fixed').css({'top': -scrollPosition});
 //	$('#omikuji_box').addClass('js-omikuji_box');
 		$('.js-modal').fadeIn();
 		return false;
+		});
 	});
 	$('.js-modal-close').on('click',function(){
 		$('.js-modal').fadeOut();
