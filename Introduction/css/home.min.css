@@ -88,18 +88,18 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 
 /* 	omikuji_box */
 #omikuji_box{
-	width: 50%;
-	height: 50%;
+	width: 75%;
+	height: 75%;
 }
 
 .js-omikuji_box {
-	animation: js-omikuji_box 2.0s linear;
+	animation: js-omikuji_box 1.5s linear;
 }
 @keyframes js-omikuji_box {
       0%   { transform: translate(0%, 0%); }
-      25%  { transform: translate(20%, 0%) rotate(20deg); }
-      50%  { transform: translate(-20%, 0%) rotate(-20deg); }
-      75%  { transform: translate(0%, 20%) rotate(20deg); }
+      25%  { transform: translate(0%, 0%) rotate(20deg); }
+      50%  { transform: translate(0%, 0%) rotate(-20deg); }
+      75%  { transform: translate(0%, 0%) rotate(20deg); }
       100% { transform: translate(0%, 0%) rotate(0deg); }
 }
 
