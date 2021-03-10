@@ -81,7 +81,8 @@ $.when(
     $('.js-modal-open2').on('click',function() {
 			   $('#omikuji_box').addClass('js-omikuji_box');
     });
-).done($(function() {
+//).done($(function() {
+).done(
 		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
@@ -107,7 +108,7 @@ $.when(
 		$('body').addClass('fixed').css({'top': -scrollPosition});
 		$('.js-modal').fadeIn();
 		return false;
-	});
+//	});
 );
 
 $(function() {
