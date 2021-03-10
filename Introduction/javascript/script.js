@@ -77,6 +77,39 @@ $(function() {
 
 
 //omikuji_modal
+$(function() {
+	$('.js-modal-open').on('click',function(){
+	$.when(
+		$('#omikuji_box').addClass('js-omikuji_box');
+	).done(
+		var img = new Array (
+			'images/omikuji_daikichi.png',
+			'images/omikuji_chuukichi.png',
+			'images/omikuji_syoukichi.png',
+			'images/omikuji_kyou.png',
+		);
+		var random = Math.floor(Math.random() * img.length);
+		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');
+		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');
+		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
+		var h1 = $('#header_inner').height();
+		var h2 = $('.CoffeeBrake_Top').height();
+		var h3 = h1 + h2
+		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
+		var scrollPosition = $(window).scrollTop();
+		$('body').addClass('fixed').css({'top': -scrollPosition});$('#omikuji_box').addClass('js-omikuji_box');
+		$('.js-modal').fadeIn();
+		return false;
+	
+	});
+	$('.js-modal-close').on('click',function(){
+		$('.js-modal').fadeOut();
+		$('.omikuji-modal-content').empty();
+		$('body').removeClass('fixed').css({'top': 0});
+		window.scrollTo( 0 , scrollPosition );
+		return false;
+	});
+});
 //$(function() {
 //	$.when(
 //		$('.js-modal-open2').on('click',function() {
@@ -91,7 +124,7 @@ $(function() {
 //});
 
 $(function() {
-	$('.js-modal-open').on('click',function(){
+	$('.js-modal-open2').on('click',function(){
 //		looopAnimation("omikuji_box", "js-omikuji_box", 100);	// ID値「omikuji_box」に対してCSSアニメ―ション「js-omikuji_box」を100ミリ秒の間隔を空けてループ再生
 //		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
 //		$('.js-modal').parents().css('transform','none');
