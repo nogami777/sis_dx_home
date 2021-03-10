@@ -107,7 +107,6 @@ $(function() {
 		return false;
 	});
 	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　transitionend', function() {
-		$('.js-modal').fadeIn();
 		$('#omikuji_box').removeClass('js-omikuji_box');
 		return false;
 	});
