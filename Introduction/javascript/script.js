@@ -79,8 +79,11 @@ $(function() {
 //omikuji_modal
 
 $(function() {
+	$('.js-modal-open').on('click',function(){
+		$('#omikuji_box').addClass('js-omikuji_box');
+		return false;
+	});
 	$('#omikuji_box').on('animationend', function() {
-		$('#omikuji_box').removeClass('js-omikuji_box');
 		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
@@ -98,21 +101,29 @@ $(function() {
 		var scrollPosition = $(window).scrollTop();
 		$('body').addClass('fixed').css({'top': -scrollPosition});
 		$('.js-modal').fadeIn();
+		$('#omikuji_box').removeClass('js-omikuji_box');
+		return false;
+	});
+	$('.js-modal-close').on('click',function(){
+		$('.js-modal').fadeOut();
+		$('.omikuji-modal-content').empty();
+		$('body').removeClass('fixed').css({'top': 0});
+		window.scrollTo( 0 , scrollPosition );
 		return false;
 	});
 });
 
-$(function() {
-	$('.js-modal-open').on('click',function(){
-		$('#omikuji_box').addClass('js-omikuji_box');
-		return false;
-	});
+//$(function() {
+//	$('.js-modal-open').on('click',function(){
+//		$('#omikuji_box').addClass('js-omikuji_box');
+//		return false;
+//	});
 //	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　animationend', function() {
 //	$('#omikuji_box').on('animationend', function() {
 //		$('#omikuji_box').removeClass('js-omikuji_box');
 //		return false;
 //	});
-});
+//});
 
 //$(function() {
 //	$.when(
@@ -165,7 +176,7 @@ $(function() {
 		return false;
 //		});
 	});
-	$('.js-modal-close').on('click',function(){
+	$('.js-modal-close999').on('click',function(){
 		$('.js-modal').fadeOut();
 		$('.omikuji-modal-content').empty();
 		$('body').removeClass('fixed').css({'top': 0});
