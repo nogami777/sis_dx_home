@@ -78,7 +78,7 @@ $(function() {
 
 //omikuji_modal
 //$.when(
-    $('.js-modal-open2').on('click',function() {
+//    $('.js-modal-open2').on('click',function() {
 //			   $('#omikuji_box').addClass('js-omikuji_box');
 //    });
 //	wait(2);
@@ -86,10 +86,10 @@ $(function() {
 
 //).done($(function() {
 //).done(
-	$('#omikuji_box').addClass('js-omikuji_box');
+//	$('#omikuji_box').addClass('js-omikuji_box');
 //);
 //
-});
+//});
 
 $(function() 
 	$('.js-modal-open').on('click',function(){
