@@ -87,6 +87,13 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 
 
 /* 	omikuji_box */
+#omikuji_box{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
 .js-omikuji_box {
       -webkit-animation: js-omikuji_box 2.5s linear 0s 1;
       animation: js-omikuji_box 2.5s linear 0s 1;
