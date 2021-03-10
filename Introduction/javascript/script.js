@@ -79,7 +79,7 @@ $(function() {
 //omikuji_modal
 $(function() {
 	$('.js-modal-open').on('click',function(){
-		looopAnimation("omikuji_box", "js-omikuji_box", 100);	// ID値「omikuji_box」に対してCSSアニメ―ション「js-omikuji_box」を100ミリ秒の間隔を空けてループ再生
+//		looopAnimation("omikuji_box", "js-omikuji_box", 100);	// ID値「omikuji_box」に対してCSSアニメ―ション「js-omikuji_box」を100ミリ秒の間隔を空けてループ再生
 //		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
 //		$('.js-modal').parents().css('transform','none');
 		var img = new Array (
