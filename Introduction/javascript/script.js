@@ -79,7 +79,8 @@ $(function() {
 //omikuji_modal
 
 $(function() {
-	$('#omikuji_box999').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　transitionend', function() {
+	$('#omikuji_box').on('animationend', function() {
+		$('#omikuji_box').removeClass('js-omikuji_box');
 		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
@@ -106,12 +107,11 @@ $(function() {
 		$('#omikuji_box').addClass('js-omikuji_box');
 		return false;
 	});
-//	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　transitionend', function() {
-	$('#omikuji_box').on('animationend', function() {
-		$('#omikuji-content').text("終了");
-		$('#omikuji_box').removeClass('js-omikuji_box');
+//	$('#omikuji_box').on('webkitTransitionEnd　mozTransitionEnd　oTransitionEnd　animationend', function() {
+//	$('#omikuji_box').on('animationend', function() {
+//		$('#omikuji_box').removeClass('js-omikuji_box');
 //		return false;
-	});
+//	});
 });
 
 //$(function() {
