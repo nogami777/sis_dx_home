@@ -77,6 +77,35 @@ $(function() {
 
 
 //omikuji_modal
+$.when(
+    $('.js-modal-open2').on('click',function() {
+			   $('#omikuji_box').addClass('js-omikuji_box');
+    });
+).done(function() {
+		var img = new Array (
+			'images/omikuji_daikichi.png',
+			'images/omikuji_chuukichi.png',
+			'images/omikuji_syoukichi.png',
+		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');
+		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
+//		$elm.css({transform: none !important});
+//		$elm.css({transform: none});
+//		$('.tabContents,.header_inner').css('transform','none');
+//		$('.CoffeeBrake_Top,.CoffeeBrake_Title,.Coffee_Main').css('transform','none');
+//		$('.header_contact_inner').css('transform','none');
+//		$('#page').css('transform','none');
+		var h1 = $('#header_inner').height();
+		var h2 = $('.CoffeeBrake_Top').height();
+		var h3 = h1 + h2
+//		$('.omikuji-modal-content').append('<p>' +h1 +h2 +h3+ '</p>');
+		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
+		var scrollPosition = $(window).scrollTop();
+		$('body').addClass('fixed').css({'top': -scrollPosition});
+		$('.js-modal').fadeIn();
+		return false;
+	});
+
+
 $(function() {
 	$('.js-modal-open').on('click',function(){
 //		looopAnimation("omikuji_box", "js-omikuji_box", 100);	// ID値「omikuji_box」に対してCSSアニメ―ション「js-omikuji_box」を100ミリ秒の間隔を空けてループ再生
