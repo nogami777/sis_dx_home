@@ -77,22 +77,25 @@ $(function() {
 
 
 //omikuji_modal
-$(function() {
-	$.when(
-		$('.js-modal-open2').on('click',function() {
-			   $('#omikuji_box').addClass('js-omikuji_box');
-		});
+//$(function() {
+//	$.when(
+//		$('.js-modal-open2').on('click',function() {
+//			   $('#omikuji_box').addClass('js-omikuji_box');
+//			$('.js-modal').fadeIn();
+//			return false;
+//		});
 //).done($(function() {
-	).done(
-		$('#omikuji_box').addClass('js-omikuji_box');
-	);
-});
+//	).done(
+//		$('#omikuji_box').addClass('js-omikuji_box');
+//	);
+//});
 
 $(function() {
 	$('.js-modal-open').on('click',function(){
 //		looopAnimation("omikuji_box", "js-omikuji_box", 100);	// ID値「omikuji_box」に対してCSSアニメ―ション「js-omikuji_box」を100ミリ秒の間隔を空けてループ再生
 //		var position = $(this).offset().top; //ヘッダの高さ分位置をずらす
 //		$('.js-modal').parents().css('transform','none');
+		$('#omikuji_box').addClass('js-omikuji_box');
 		var img = new Array (
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
