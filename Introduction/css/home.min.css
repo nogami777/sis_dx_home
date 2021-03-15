@@ -92,15 +92,15 @@ swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex
 	height: 10%;
 }
 
-.js-omikuji_box {
-	animation: js-omikuji_box 1.0s linear;
+.cs-omikuji_box {
+	animation: cs-omikuji_box 1.0s linear;			/* おみくじ箱を1秒間定速で動かす */
 }
-@keyframes js-omikuji_box {
-      0%   { transform: translate(0%, 0%); }
-      25%  { transform: translate(0%, 0%) rotate(20deg); }
-      50%  { transform: translate(0%, 0%) rotate(-20deg); }
-      75%  { transform: translate(0%, 0%) rotate(20deg); }
-      100% { transform: translate(0%, 0%) rotate(0deg); }
+@keyframes cs-omikuji_box {					/* おみくじ箱アニメーションの内容 */
+      0%   { transform: translate(0%, 0%); }			/* 動く前 ％は指定時間の按分割合　*/
+      25%  { transform: translate(0%, 0%) rotate(20deg); }	/* 最初から25％までは20度回転　*/
+      50%  { transform: translate(0%, 0%) rotate(-20deg); }	/* 25％から50％までは20度逆回転　*/
+      75%  { transform: translate(0%, 0%) rotate(20deg); }	/* 50％から75％までは20度回転　*/
+      100% { transform: translate(0%, 0%) rotate(0deg); }	/* 最後は元の位置へ　*/
 }
 
 .js-omikuji_box999 {
