@@ -79,36 +79,36 @@ $(function() {
 //omikuji_modal
 
 $(function() {
-	$('.js-modal-open').on('click',function(){
-		$('#omikuji_box').addClass('js-omikuji_box');
+	$('.js-modal-open').on('click',function(){		//「クリックしてみて」をクリックされたときに実行する部分
+		$('#omikuji_box').addClass('cs-omikuji_box');	//イメージを動かすクラス（cs-omikuji_box）を与える（追加と同時に動き出す。動きはCSSで定義）
 		return false;
 	});
-	$('#omikuji_box').on('animationend', function() {
-		var img = new Array (
+	$('#omikuji_box').on('animationend', function() {	//おみくじ箱のイメージが動いた後（cs-omikuji_box終了後）に実行する部分
+		var img = new Array (				//おみくじの出力イメージを配列化
 			'images/omikuji_daikichi.png',
 			'images/omikuji_chuukichi.png',
 			'images/omikuji_syoukichi.png',
 			'images/omikuji_kyou.png',
 		);
-		var random = Math.floor(Math.random() * img.length);
-		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');
-		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');
+		var random = Math.floor(Math.random() * img.length);				//0～配列数までの間でランダムに数字を生成し小数点以下切り捨てて整数化
+		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');		//モーダルコンテンツへHTMLソースを埋め込み
+		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');	//ランダム整数に該当する位置のイメージをセット
 		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
-		var h1 = $('#header_inner').height();
-		var h2 = $('.CoffeeBrake_Top').height();
+		var h1 = $('#header_inner').height();		//ヘッダーID=header_innerの高さを取得
+		var h2 = $('.CoffeeBrake_Top').height();	//ヘッダー要素=CoffeeBrake_Topの高さを取得
 		var h3 = h1 + h2
-		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);
-		var scrollPosition = $(window).scrollTop();
-		$('body').addClass('fixed').css({'top': -scrollPosition});
-		$('.js-modal').fadeIn();
-		$('#omikuji_box').removeClass('js-omikuji_box');
-		return false;
+		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);	//モーダルやモーダル背景のTOP位置がヘッダー直下になってしまう対策としてヘッダー分の高さ分上へ移動
+		var scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
+		$('body').addClass('fixed').css({'top': -scrollPosition});	//モーダル表示中はスクロールできないようにbodyの座標位置を固定化
+		$('.js-modal').fadeIn();					//モーダルをフェードイン表示
+		$('#omikuji_box').removeClass('cs-omikuji_box');		//イメージを動かすクラス（cs-omikuji_box）を削除（次回クリックに備えて）
+		return false;							//元の画面は更新しない
 	});
-	$('.js-modal-close').on('click',function(){
-		$('.js-modal').fadeOut();
-		$('.omikuji-modal-content').empty();
-		$('body').removeClass('fixed').css({'top': 0});
-		window.scrollTo( 0 , scrollPosition );
+	$('.js-modal-close').on('click',function(){			//要素=js-modal-close（閉じるとかモーダル背景）をクリックされると以下ロジックを実行
+		$('.js-modal').fadeOut();				//モーダルをフェードアウト消去
+		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
+		$('body').removeClass('fixed').css({'top': 0});		//bodyを固定化していた定義を開放
+		window.scrollTo( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
 		return false;
 	});
 });
