@@ -42,15 +42,15 @@
 		<div class="tabContents">
 			<section id="section-1">
 				<div class="omikuji-content">
-					    <a class="js-modal-open" href="" data-target="modal01">
-						    <p>クリックしてみて！</p><img id="omikuji_box" src="images/omikuji_box.png"></a>
+					    <a class="js-modal-open" href="" data-target="modal01">	<!-- Javascriptでモーダル部分modal01を表示 -->
+						    <p>クリックしてみて！</p><img id="omikuji_box" src="images/omikuji_box.png"></a>	<!-- モーダル表示前にイメージを動かすbyJquery -->
 	<!-- 				<img id="omikuji_box" class="js-omikuji_box" src="images/omikuji_box.png" width="200" height="200"> -->
 				</div>
 	<!-- 			<img id="omikuji_box" src="images/omikuji_box.png"> -->
-				<div id="modal01" class="modal js-modal">
+				<div id="modal01" class="modal js-modal">	<!-- モーダルで表示する部分  -->
 					<!-- <div class="omikuji-modal-bg js-modal-close"></div> -->
-					<div class="omikuji-modal-bg js-modal-close"></div>
-					<div class="omikuji-modal-content">
+					<div class="omikuji-modal-bg js-modal-close"></div>	<!-- モーダル背景。背景をクリックしても閉じられるようにjs-modal-closeを併記  -->
+					<div class="omikuji-modal-content">	<!-- モーダルコンテンツの中身はJqueryでJavascriptをコールして生成  -->
 						<!-- <p>あなたの今日の運勢は</p> -->
 						<!-- <img src="images/omikuji_daikichi.png"> -->
 						<!-- <p>今日の君は大吉ということで。めでたしめでたし。</p>
