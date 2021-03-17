@@ -111,7 +111,7 @@ $(function() {
 		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
 //		$('body').removeClass('fixed').css({'top': scrollPosition});		//bodyを固定化していた定義を開放
 		$('body').removeClass('fixed');		//bodyを固定化していた定義を開放
-		$(window).scrollTop(100,scrollPosition);			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
+		$(window).scrollTop(scrollPosition);			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
 //		window.scrollTop( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
 		return false;
 	});
