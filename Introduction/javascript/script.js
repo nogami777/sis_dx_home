@@ -93,7 +93,8 @@ $(function() {
 		);
 		var random = Math.floor(Math.random() * img.length);				//0～配列数までの間でランダムに数字を生成し小数点以下切り捨てて整数化
 		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');		//モーダルコンテンツへHTMLソースを埋め込み
-		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');	//ランダム整数に該当する位置のイメージをセット
+//		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');	//ランダム整数に該当する位置のイメージをセット
+		$('.omikuji-result').append('<img src =' +img[random]+ '>');	//ランダム整数に該当する位置のイメージをセット
 		$('.omikuji-modal-content').append('<p class="js-modal-close"><a href="">閉じる</a></p>');
 //		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
 //		$('.omikuji-modal-content').append('<button class="js-modal-close">閉じる</button>');
