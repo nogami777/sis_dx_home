@@ -95,7 +95,7 @@ $(function() {
 		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');		//モーダルコンテンツへHTMLソースを埋め込み
 		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');	//ランダム整数に該当する位置のイメージをセット
 //		$('.omikuji-modal-content').append('<a class="js-modal-close">閉じる</a>');
-		$('.omikuji-modal-content').append('<a class="js-modal-close" href="#">閉じる</a>');
+		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
 		var h1 = $('#header_inner').height();		//ヘッダーID=header_innerの高さを取得
 		var h2 = $('.CoffeeBrake_Top').height();	//ヘッダー要素=CoffeeBrake_Topの高さを取得
 		var h3 = h1 + h2;
@@ -107,7 +107,7 @@ $(function() {
 		return false;							//元の画面は更新しない
 	});
 	$('.js-modal-close').on('click',function(){			//要素=js-modal-close（閉じるとかモーダル背景）をクリックされると以下ロジックを実行
-//		var scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
+		scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
 		$('.js-modal').fadeOut();				//モーダルをフェードアウト消去
 		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
 //		$('body').removeClass('fixed').css({'top': scrollPosition});		//bodyを固定化していた定義を開放
