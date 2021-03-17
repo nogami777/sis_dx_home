@@ -83,7 +83,7 @@ $(function() {
 		$('#omikuji_box').addClass('cs-omikuji_box');	//イメージを動かすクラス（cs-omikuji_box）を与える（追加と同時に動き出す。動きはCSSで定義）
 		return false;
 	});
-	var scrollPosition = $(window).scrollTop();		//現在のスクロール座標位置を取得
+	var scrollPosition;					//スクロール座標位置
 	$('#omikuji_box').on('animationend', function() {	//おみくじ箱のイメージが動いた後（cs-omikuji_box終了後）に実行する部分
 		var img = new Array (				//おみくじの出力イメージを配列化
 			'images/omikuji_daikichi.png',
@@ -99,6 +99,7 @@ $(function() {
 		var h1 = $('#header_inner').height();		//ヘッダーID=header_innerの高さを取得
 		var h2 = $('.CoffeeBrake_Top').height();	//ヘッダー要素=CoffeeBrake_Topの高さを取得
 		var h3 = h1 + h2;
+		scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
 		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3 + scrollPosition);	//モーダルTOP位置がヘッダー直下になってしまう対策としてヘッダー高さ分上へ移動＋現在位置まで下へ移動
 		$('body').addClass('fixed').css({'top':-scrollPosition});	//モーダル表示中はスクロールできないようにbodyの座標位置を固定化
 		$('.js-modal').fadeIn();					//モーダルをフェードイン表示
