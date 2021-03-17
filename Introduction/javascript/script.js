@@ -95,7 +95,8 @@ $(function() {
 		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');		//モーダルコンテンツへHTMLソースを埋め込み
 		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');	//ランダム整数に該当する位置のイメージをセット
 //		$('.omikuji-modal-content').append('<a class="js-modal-close">閉じる</a>');
-		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
+//		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
+		$('.omikuji-modal-content').append('<button class="js-modal-close">閉じる</button>');
 		var h1 = $('#header_inner').height();		//ヘッダーID=header_innerの高さを取得
 		var h2 = $('.CoffeeBrake_Top').height();	//ヘッダー要素=CoffeeBrake_Topの高さを取得
 		var h3 = h1 + h2;
