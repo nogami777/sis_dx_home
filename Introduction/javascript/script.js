@@ -108,7 +108,7 @@ $(function() {
 		$('.js-modal').fadeOut();				//モーダルをフェードアウト消去
 		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
 //		$('body').removeClass('fixed').css({'top': -scrollPosition});		//bodyを固定化していた定義を開放
-		$('body').removeClass('fixed');		//bodyを固定化していた定義を開放
+//		$('body').removeClass('fixed');		//bodyを固定化していた定義を開放
 //		window.scrollTo( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
 		return false;
 	});
