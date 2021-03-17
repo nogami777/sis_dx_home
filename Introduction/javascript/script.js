@@ -97,8 +97,9 @@ $(function() {
 		var h1 = $('#header_inner').height();		//ヘッダーID=header_innerの高さを取得
 		var h2 = $('.CoffeeBrake_Top').height();	//ヘッダー要素=CoffeeBrake_Topの高さを取得
 		var h3 = h1 + h2
-		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3);	//モーダルやモーダル背景のTOP位置がヘッダー直下になってしまう対策としてヘッダー分の高さ分上へ移動
+		
 		var scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
+		$('.js-modal,.omikuji-modal-bg').css('margin-top', - h3 - scrollPosition);	//モーダルやモーダル背景のTOP位置がヘッダー直下になってしまう対策としてヘッダー分の高さ分上へ移動
 		$('body').addClass('fixed').css({'top': -scrollPosition});	//モーダル表示中はスクロールできないようにbodyの座標位置を固定化
 		$('.js-modal').fadeIn();					//モーダルをフェードイン表示
 		$('#omikuji_box').removeClass('cs-omikuji_box');		//イメージを動かすクラス（cs-omikuji_box）を削除（次回クリックに備えて）
@@ -108,7 +109,7 @@ $(function() {
 		$('.js-modal').fadeOut();				//モーダルをフェードアウト消去
 		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
 		$('body').removeClass('fixed').css({'top': 0});		//bodyを固定化していた定義を開放
-		window.scrollTo( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
+//		window.scrollTo( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
 		return false;
 	});
 });
