@@ -106,12 +106,12 @@ $(function() {
 		return false;							//元の画面は更新しない
 	});
 	$('.js-modal-close').on('click',function(){			//要素=js-modal-close（閉じるとかモーダル背景）をクリックされると以下ロジックを実行
-		var scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
+//		var scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
 		$('.js-modal').fadeOut();				//モーダルをフェードアウト消去
 		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
-		$('body').removeClass('fixed').css({'top': scrollPosition});		//bodyを固定化していた定義を開放
-//		$('body').removeClass('fixed');		//bodyを固定化していた定義を開放
-		window.scrollTo( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
+//		$('body').removeClass('fixed').css({'top': scrollPosition});		//bodyを固定化していた定義を開放
+		$('body').removeClass('fixed');		//bodyを固定化していた定義を開放
+		window.scrollTop( 0 , scrollPosition );			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
 		return false;
 	});
 });
