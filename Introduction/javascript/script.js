@@ -92,10 +92,10 @@ $(function() {
 			'images/omikuji_kyou.png',
 		);
 		var random = Math.floor(Math.random() * img.length);				//0～配列数までの間でランダムに数字を生成し小数点以下切り捨てて整数化
-		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');		//モーダルコンテンツへHTMLソースを埋め込み
+//		$('.omikuji-modal-content').append('<p>あなたの今日の運勢は</p>');		//モーダルコンテンツへHTMLソースを埋め込み
 //		$('.omikuji-modal-content').append('<P><img src =' +img[random]+ '></p>');	//ランダム整数に該当する位置のイメージをセット
 		$('.omikuji-result').append('<img src =' +img[random]+ '>');	//ランダム整数に該当する位置のイメージをセット
-		$('.omikuji-modal-content').append('<p class="js-modal-close"><a href="">閉じる</a></p>');
+//		$('.omikuji-modal-content').append('<p class="js-modal-close"><a href="">閉じる</a></p>');
 //		$('.omikuji-modal-content').append('<a class="js-modal-close" href="">閉じる</a>');
 //		$('.omikuji-modal-content').append('<button class="js-modal-close">閉じる</button>');
 		var h1 = $('#header_inner').height();		//ヘッダーID=header_innerの高さを取得
@@ -111,7 +111,7 @@ $(function() {
 	$('.js-modal-close').on('click',function(){			//要素=js-modal-close（閉じるとかモーダル背景）をクリックされると以下ロジックを実行
 //		scrollPosition = $(window).scrollTop();			//現在のスクロール座標位置を取得
 		$('.js-modal').fadeOut();				//モーダルをフェードアウト消去
-		$('.omikuji-modal-content').empty();			//モーダルコンテンツに先ほどのHTMLソースが残存しているので消去（次回に備えて）
+		$('.omikuji-result').empty();				//モーダルコンテンツに先ほどのおみくじ結果が残存しているので消去（次回に備えて）
 //		$('body').removeClass('fixed').css({'top': scrollPosition});		//bodyを固定化していた定義を開放
 		$('body').removeClass('fixed');		//bodyを固定化していた定義を開放
 		$(window).scrollTop(scrollPosition);			//スクロール位置が初期化されているので取得しておいた元の座標位置へ移動
